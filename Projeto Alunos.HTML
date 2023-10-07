@@ -1,0 +1,30 @@
+O cadastro de 25 alunos usando um array de strings:
+
+java
+import java.util.Scanner;
+
+public class CadastroAlunos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Defina o tamanho do array para 25 alunos
+        String[] alunos = new String[25];
+
+        // Loop para cadastrar os alunos
+        for (int i = 0; i < 25; i++) {
+            System.out.print("Digite o nome do aluno " + (i + 1) + ": ");
+            alunos[i] = scanner.nextLine();
+        }
+
+        // Imprime a lista de alunos cadastrados
+        System.out.println("Alunos cadastrados:");
+        for (int i = 0; i < 25; i++) {
+            System.out.println((i + 1) + ": " + alunos[i]);
+        }
+
+        scanner.close();
+    }
+}
+
+
+Este código permite que você insira o nome de 25 alunos e, em seguida, lista os nomes cadastrados. Certifique-se de ajustar o código conforme necessário para atender aos requisitos específicos do seu projeto.
